@@ -8129,11 +8129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vladimir\\Desktop\\test aspnet core\\TestProject\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "C:\\Users\\Vladimir\\Desktop\\TestProject copy\\TestProject\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "C:\\Users\\Vladimir\\Desktop\\test aspnet core\\TestProject\\TestProject\\TestProject.csproj",
+      "projectPath": "C:\\Users\\Vladimir\\Desktop\\TestProject copy\\TestProject\\TestProject.csproj",
       "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vladimir\\Desktop\\test aspnet core\\TestProject\\TestProject\\obj\\",
+      "outputPath": "C:\\Users\\Vladimir\\Desktop\\TestProject copy\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vladimir\\AppData\\Roaming\\NuGet\\NuGet.Config",
