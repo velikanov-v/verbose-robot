@@ -40,23 +40,23 @@ namespace SecondProject.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Create(Group group)
-        {
+        {            
             db.Groups.Add(group);
-            await db.SaveChangesAsync();
+            await db.SaveChangesAsync();                       
             return RedirectToAction("Index");
         }
 
-        //details
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id != null)
-            {
-                Group group = await db.Groups.FirstOrDefaultAsync(p => p.GroupId == id);
-                if (group != null)
-                    return View(group);
-            }
-            return NotFound();
-        }
+        ////details
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id != null)
+        //    {
+        //        Group group = await db.Groups.FirstOrDefaultAsync(p => p.GroupId == id);
+        //        if (group != null)
+        //            return View(group);
+        //    }
+        //    return NotFound();
+        //}
 
         // edit
         public async Task<IActionResult> Edit(int? id)
@@ -77,8 +77,8 @@ namespace SecondProject.Controllers
             return RedirectToAction("Index");
         }
 
-        //// Studentedit
-        //public async Task<IActionResult> StudentEdit(int? id)
+        //// Workeredit
+        //public async Task<IActionResult> WorkerEdit(int? id)
         //{
         //    if (id != null)
         //    {
@@ -89,7 +89,7 @@ namespace SecondProject.Controllers
         //    return NotFound();
         //}
         //[HttpPost]
-        //public async Task<IActionResult> StudentEdit(Group group)
+        //public async Task<IActionResult> WorkerEdit(Group group)
         //{
         //    db.Groups.Update(group);
         //    await db.SaveChangesAsync();
@@ -101,6 +101,7 @@ namespace SecondProject.Controllers
         [ActionName("Delete")]
         public async Task<IActionResult> ConfirmDelete(int? id)
         {
+           
             if (id != null)
             {
                 Group group = await db.Groups.FirstOrDefaultAsync(p => p.GroupId == id);

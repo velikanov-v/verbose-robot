@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace SecondProject.Models
 {
     public class Group
     {
         public int GroupId { get; set; }
-        public int GroupNumber { get; set; }
-        public string Teacher { get; set; }  
-        public ICollection<Student> Students { get; set; }
+        public string GroupName { get; set; }             
+        public int? TeacherId { get; set; }
+        public Teacher Teacher { get; set; }
+        public int CourseId { get; set; }  
+        public Course Course { get; set; }
+        public List<GroupsWorkers> GroupWorkers { get; set; }
     }
 }

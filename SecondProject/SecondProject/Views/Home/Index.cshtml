@@ -14,7 +14,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td> Группа - @item.GroupNumber</td>
+                <td> Группа - @item.GroupName</td>
                 <td>@item.Teacher</td>
                 @*<td>@item.Number</td>*@
                 <td><a asp-action="Edit" asp-controller="Home" asp-route-id="@item.GroupId">Изменить</a></td>
